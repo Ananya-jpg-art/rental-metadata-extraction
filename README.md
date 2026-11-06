@@ -34,18 +34,14 @@ extraction logic anywhere in the code.
 
 ```
 rental_project/
-├── data/
-│   ├── train/                 # training .docx and .png files
-│   ├── test/                  # test .docx and .png files
-│   ├── train.csv              # labels for train/
-│   └── test.csv               # labels for test/
+├── test/                  # test .docx and .png files
+├── train.csv              # labels for train/
+├── test.csv               # labels for test/
 ├── extract_text.py            # docx reading + OCR
 ├── model.py                   # LLM prompt and field extraction
 ├── run_prediction.py          # runs the pipeline on the test set
 ├── evaluate.py                # per-field recall
 ├── predictions_test.csv       # predictions for the test set
-├── prediction_errors.txt      # error log from earlier runs (can be ignored)
-├── assignment-details.pdf     # assignment description
 └── README.md
 ```
 
